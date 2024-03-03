@@ -42,20 +42,26 @@ img {
 }
 
 /* cssリセット ここまで*/
+
+.container{
+   background-color: rgb(234, 222, 222);
+}
+
 .title{
     max-width: 960px;
     margin : 0 auto;
     height: 150px;line-height: 150px;
     text-align: center;
-    background-color: rgb(180, 179, 179);
+    background-color: rgb(234, 222, 222);
     color: teal;
 }
 
 .wrap{
     max-width: 960px;
     margin : 0 auto;
-    background-color: rgb(180, 179, 179);
+    background: rgb(234, 222, 222);
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -64,6 +70,12 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 31%;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.text{
+    background: white;
 }
 
 .subtitle{
@@ -71,14 +83,42 @@ img {
     justify-content: space-between;
     background-color: white;
     color: teal;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
 }
 
 .caption{
     display: flex;
     justify-content: space-between;
     background-color: white;
-    padding-left: 10px;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 5px;
 }
+
+@media screen and (max-width:767px) {
+    .wrap {
+        display: block;
+        
+    }
+
+    .box1 {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .text img{
+        width: 100%;
+        height: auto;
+    }
+
+    .container{
+        background-color: rgb(234, 222, 222);
+        padding: 0px 20px 0px 20px;
+    }
+
+}
+
+
 
 
